@@ -4,54 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Página da Escola — Apresentação</title>
-  <style>
-    :root{--accent:#b02b2b;--bg:#f7fafc;--card:#ffffff}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0f172a}
-    header{background:linear-gradient(90deg,#b02b2b 0%,#330303 100%); color:white; padding:28px 20px}
-    .container{max-width:1000px;margin:20px auto;padding:0 16px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:64px;height:64px;border-radius:8px;background:#ffffff4f;display:flex;align-items:center;justify-content:center;font-weight:700}
-    h1{margin:0;font-size:20px}
-    p.lead{opacity:0.95;margin:6px 0 0}
-
-    /* Tabs */
-    .tabs{display:flex;gap:8px;margin-top:18px}
-    .tab-btn{background:transparent;border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600}
-    .tab-btn[aria-selected="true"]{background:var(--card);box-shadow:0 6px 18px rgba(43,108,176,0.12);color:var(--accent)}
-    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:16px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
-
-    /* Layout inside card */
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media(min-width:840px){.grid{grid-template-columns:1fr 320px}}
-
-    /* Small components */
-    .section-title{font-size:16px;margin:0 0 8px}
-    ul{padding-left:18px}
-    .profile{padding:12px;border-radius:10px;background:linear-gradient(180deg,#f8fafc, #fff)}
-
-    /* Game area */
-    .ttt{display:grid;grid-template-columns:repeat(3,80px);gap:6px;justify-content:center}
-    .cell{width:80px;height:80px;display:flex;align-items:center;justify-content:center;font-size:32px;background:#f1f5f9;border-radius:8px;cursor:pointer}
-    .controls{display:flex;gap:8px;flex-wrap:wrap}
-    button.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(2,6,23,0.06);background:#fff;cursor:pointer}
-
-    /* Dev area */
-    .ttt{display:grid;grid-template-columns:repeat(3,80px);gap:6px;justify-content:center}
-    .cell{width:80px;height:80px;display:flex;align-items:center;justify-content:center;font-size:32px;background:#f1f5f9;border-radius:8px;cursor:pointer}
-    .controls{display:flex;gap:8px;flex-wrap:wrap}
-    button.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(2,6,23,0.06);background:#fff;cursor:pointer}
-    footer{max-width:1000px;margin:28px auto;padding:12px 16px;color:#475569;font-size:14px}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container">
       <div class="brand">
-        <div class="logo">FATEC</div>
+        <div class="logo">
+          <img src="logo_fatec_pb.png" alt="Logo FATEC">
+        </div>
         <div>
           <h1>FATEC — Apresentação</h1>
-          <p class="lead">Bem-vindo ao portal de apresentação. Use as abas para navegar entre informações, trabalhos e jogos.</p>
+          <p class="lead">Bem-vindo ao portal de apresentação. Use as abas para navegar entre Informações, Trabalhos, Jogos e Devs.</p>
         </div>
       </div>
 
@@ -120,6 +84,13 @@
             </div>
           </form>
         </div>
+        <div>
+          <iframe 
+            src="Função Bijetora.pdf" 
+            width="100%" 
+            height="600px">
+          </iframe>
+        </div>
 
         <aside class="profile">
           <h3 class="section-title">Oque são Funções</h3>
@@ -127,7 +98,7 @@
             <li>Uma função é uma relação de um conjunto com um conjunto</li>
             <li>As funções são representadas graficamente e uma forma de verificar se um gráfico representa uma função é usar o teste da linha vertical</li>
             <li>A função aplica uma regra (f(x)) e retorna um único valor de saída</li>
-            <li>Tipor de Funções: Função sobrejetora; Função linear; Função injetora; Função inversa; <strong>Função bijetora</strong>; Função composta; Função modular; Função afim; Função par e Função ímpar</li>
+            <li>Tipos de Funções: Função sobrejetora; Função linear; Função injetora; Função inversa; <strong>Função bijetora</strong>; Função composta; Função modular; Função afim; Função par e Função ímpar</li>
           </ul>
         </aside>
       </div>
@@ -143,16 +114,13 @@
         <li>Vamos testar seus conhecimentos sobre o assunto?</li>
         <br>
         <iframe style="max-width:100%" src="https://wordwall.net/pt/embed/855731aa50624cc092e583fb14bd71c8?themeId=45&templateId=5&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
-        </ul>
-          
-        </div>
         <br>
-
+        <br>
         <h3 class="section-title">In English</h3>
-       
-          <br>
-        
+        <br>
         <iframe style="max-width:100%" src="https://wordwall.net/pt/embed/8e6e310c3f1d4cfc9ddfe884ff17224e?themeId=45&templateId=5&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+      </ul>
+
       </div>
     </section>
 
@@ -160,6 +128,9 @@
       <div>
         <h2 class="section-title">Devs deste Projeto</h2>
         <p>Desenvolvido Por: Rebeca Pacheco Baia & Laura Piovan Ferreira da Silva </p>
+        <ul>
+        <li>ATT; Obrigada ❤</li>
+      </ul>
       </div>
     </section>
   </main>
